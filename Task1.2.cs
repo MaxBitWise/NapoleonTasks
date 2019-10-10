@@ -44,7 +44,7 @@ namespace ConsoleApp2
             QuickSort(RestArray, 0, RestCounter - 1);
 
             OddCounter = 0;
-            RestCounter--;
+            RestCounter = 0;
 
             for (int i = 0; i < array.Length; i++)
             {
@@ -56,7 +56,7 @@ namespace ConsoleApp2
                 else
                 {
                     array[i] = RestArray[RestCounter];
-                    RestCounter--;
+                    RestCounter++;
                 }
             }
         }
